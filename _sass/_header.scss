@@ -1,0 +1,31 @@
+header {
+    padding: 0.5rem;
+    a.header-logo {
+        color: #000;
+        @include on-mobile {
+            text-align: center;
+        }
+        &:hover {
+            color: #218282;
+        }
+        h1 {
+            font-size: 1.8rem;
+        }
+    }
+    nav {
+        ul {
+            list-style: none;
+            text-align: right;
+            li {
+                display: inline-block;
+                margin-right: 1rem;
+                &:last-child {
+                    margin-right: 0;
+                }
+                a {
+    
+                }
+            }
+        }
+    }
+}

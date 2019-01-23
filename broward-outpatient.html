@@ -1,0 +1,85 @@
+---
+layout: default
+permalink: /broward-outpatient/
+---
+
+<section class="hero">
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+                <nav class="breadcrumb" aria-label="breadcrumbs">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li class="is-active" aria-current="page"><a href="#">Broward Outpatient</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="columns is-centered">
+            <div class="column is-half has-text-centered">
+                <h2>Broward Outpatient</h2>
+                <span class="subtitle">Website Project</span>
+                <div class="tags is-centered">
+                    <span class="tag">PHP</span>
+                    <span class="tag">Symfony2</span>
+                    <span class="tag">REST</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS3</span>
+                    <span class="tag">SASS</span>
+                    <span class="tag">Javascript</span>
+                    <span class="tag">jQuery</span>
+                    <span class="tag">AngularJS</span>
+                </div>
+                <p>
+                    Broward Outpatient is a project I was part of for the Brauer brothers. Their current website was not grabbing the audience and leads in which they were aiming for.
+                    I was responsible for the front end development of the website which included the user interface, interactivity for content switching, appointment request system, as well as the structural coding of the website.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="case-study">
+    <div class="case-study-row alt-bg">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-half">
+                    <h2>Pain Evaluation</h2>
+                    <p>One good way to capture leads is by utilizing a tool in which the visitor provides their information in a way that benefits them in the end. For our client, we created a pain evaluation tool in which the visitor answers a series of questions related to their pain.</p>
+                    <p>Once completed, the visitor is presented with a list of what their condition could be along with related treatments. The backend of the system provided an API in which we used with AngularJS. Using Angular, the user’s choice would be sent to our backend Symfony service and in turn, that service would send back JSON data in response to the choice. For example, if the user were to choose the symptom “Back Pain”, the data returned would be questions related to the back pain symptom. By adding some animation, we created a slick visual interaction that should definitely attract the visitors to follow through to the end.</p>
+                </div>
+                <div class="column is-half">
+                    <img src="/assets/images/broward-pain-eval-opt.gif" alt="Pain Evaluation Tool">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="case-study-row">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-half">
+                    <h2>Treatment Checker</h2>
+                    <p>While we had a tool for checking visitors’ symptoms, we needed one for visitors that knew their symptoms but were having trouble knowing what treatment they would need. For the treatment checker, we decided to go with a non AngularJS process as we had already found a solution to autocompletion search using Jquery.</p>
+                    <p>By using the third party plugin, we made an AJAX call to our Symfony2 backend service to load the conditions in a JSON request. Having that request in hand and with the help of the autocomplete plugin, it allowed us to provide hinting when users entered in their condition. Once the visitor selects their condition from the list provided, questions pertaining to that condition would then be loaded by another AJAX call to our backend service pertaining to the choice made.</p>
+                </div>
+                <div class="column is-half">
+                    <img src="/assets/images/broward-treatment-checker-opt.gif" alt="Treatment Checker Tool">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="case-study-row alt-bg">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-half">
+                    <h2>Request An Appointment</h2>
+                    <p>One unique aspect of this project was that our client wanted users to be able to request an appointment with the staff. This is the first time in which we encountered this kind of feature and our first step was to see if there was already a solution created either by use of Angular or JQuery. We found a solution for Angular using the plugin “Angular Datepicker”.</p>
+                    <p>This generated the calendar with various options for us and we styled the calendar to match the client’s branding. We implemented a watcher on selection of the time and date as we wanted the user to be scrolled down to the next section of the form after selection. Upon any error, the visitor would be returned to the form at the point in which the error occurred.</p>
+                </div>
+                <div class="column is-half">
+                    <img src="/assets/images/broward-request-appointment-opt.gif" alt="Request An Appointment Tool">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

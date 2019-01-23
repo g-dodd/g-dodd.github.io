@@ -1,0 +1,84 @@
+---
+layout: default
+---
+
+<section class="hero">
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+                <nav class="breadcrumb" aria-label="breadcrumbs">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li class="is-active" aria-current="page"><a href="#">Disc Replacement</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="columns is-centered">
+            <div class="column is-half has-text-centered">
+                <h2>Disc Replacement</h2>
+                <span class="subtitle">Website Project</span>
+                <div class="tags is-centered">
+                    <span class="tag">PHP</span>
+                    <span class="tag">Symfony2</span>
+                    <span class="tag">REST</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS3</span>
+                    <span class="tag">SASS</span>
+                    <span class="tag">Javascript</span>
+                    <span class="tag">jQuery</span>
+                    <span class="tag">AngularJS</span>
+                </div>
+                <p>
+                    The Disc Replacement website is a project in which I took part of while on the Novatex Solutions team. The client, Manhattan Orthopedic Spine, needed a website in which they could educate visitors who have been recommended spine surgery of their options.
+                    I was responsible for the front end development of the website which included the user interface, interactivity for content switching, as well as the structural coding of the website.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="case-study">
+    <div class="case-study-row alt-bg">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-half">
+                    <h2>Tabs With New DNA</h2>
+                    <p>The original wireframe called for a horizontal tab menu to seperate the different treatment options on the homepage. When putting it into practice, we found that the long treatment names would post a problem on mobile horizontally. Also, it did not do well if more treatments would be added in the future.</p>
+                    <p>By using AngularJS's ngShow, ngHide, and ngClick directives, we lined up the list vertically on the left side to control the right side content. On mobile, the navigation menu sits on top of the content in which it needs to reveal. I also added a small "scrollTo" script I wrote so that the page scrolls to the top of the content in which it reveals. I made this decision due to the way the website is presented on mobile. If on mobile, someone wants to view another treatment, the current open treatment gets closed and the new one opens. This would cause the page to jump and the user could be confused as to what happened with the content they expected to see. The scrolling bring the user to the top of the expected content with a smooth animation.</p>
+                </div>
+                <div class="column is-half">
+                    <img src="/assets/images/disc-replacement-switcher-opt.gif" alt="Tabs Switcher">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="case-study-row">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-half">
+                    <h2>If It's Not Broke...</h2>
+                    <p>Using what I accomplished with the homepage treatment switcher, I decided to apply the same solution to the frequently asked questions section of the treatments. The first option from the wireframe was to list out the question and answer in a list format. While it could have been resolved that way, it would cause the page to be long initially.</p>
+                    <p>We should want to give our visitors the option to have that content viewable or not. By using AngularJS, we applied the ngShow and ngHide directives on the answers to the questions with the questions having a ngClick directive to open them. The difference between these sections and the homepage is that I decided to not have only one answer opened at one time. Some visitors want to confirm they understood a question in which they may have read moments ago after reading a new answer to another question. This time, I assigned each opened answer into an array in which would stay open until the user closes it out manually. This way, we give the user the option to keep information at a minimal or have it expanded as needed.</p>
+                </div>
+                <div class="column is-half">
+                    <img src="/assets/images/disc-replacement-faq-opt.gif" alt="FAQ Components">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="case-study-row alt-bg">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-half">
+                    <h2>Other Tidbits</h2>
+                    <p>Within this project, one lesson that really stood out is that you cannot assume that the visitor knows how to read instructions. For the phone number, one option was to have a help text underneath with an example of how to input the format. Our manager preferred to have the form as minimal as possible so as a solution, we used javascript to keep the phone number field the format we needed.</p>
+                    <p>Looking back at this decision, I feel that I should have included both and will be proposing the reasons why. The top reason, of course, is the non-javascript crowd. While the target audience of the website would not be tech savvy to turn off javascript, you can't count out the few that do. Having the help text below the input to inform the visitor of the format desired doesn't hurt those with javascript and helps those without it. The last thing we would want is a visitor having issues submitting the form because they did not know the exact format of the phone number required.</p>
+                </div>
+                <div class="column is-half">
+                    <img src="/assets/images/disc-replacement-form.png" alt="Contact Us Form">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

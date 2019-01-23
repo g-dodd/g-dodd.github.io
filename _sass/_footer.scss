@@ -1,0 +1,8 @@
+footer {
+    background-color: #111;
+    color: #eeeeee;
+    padding: 1rem;
+    @include on-mobile {
+        text-align: center;
+    }
+}

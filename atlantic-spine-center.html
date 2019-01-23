@@ -1,0 +1,84 @@
+---
+layout: default
+---
+
+<section class="hero">
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+                <nav class="breadcrumb" aria-label="breadcrumbs">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li class="is-active" aria-current="page"><a href="#">Atlantic Spine Center</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="columns is-centered">
+            <div class="column is-half has-text-centered">
+                <h2>Atlantic Spine Center</h2>
+                <span class="subtitle">Website Project</span>
+                <div class="tags is-centered">
+                    <span class="tag">PHP</span>
+                    <span class="tag">Symfony2</span>
+                    <span class="tag">REST</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS3</span>
+                    <span class="tag">SASS</span>
+                    <span class="tag">Javascript</span>
+                    <span class="tag">jQuery</span>
+                    <span class="tag">AngularJS</span>
+                </div>
+                <p>
+                    AtlanticSpineCenter.com is a project in which I took part of while on the Novatex Solutions team. The client, Atlantic Spine Center, needed a website in which they could educate visitors of their center, staff, and treatment options they provided.
+                    I was responsible for the front end development of the website which included the user interface, interactivity for the media pages, as well as the structural coding of the website.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="case-study">
+    <div class="case-study-row alt-bg">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-half">
+                    <h2>Home Video Collage</h2>
+                    <p>Our design called for a “collage” of thumbnails in which the thumbnail needed to be replaced with a video upon clicking. To accomplish this, we utilized AngularJS and created a directive in which we called “ngCollagePlayer”. What this consisted of was a template that created a grid as well as the video hidden from the view.</p>
+                    <p>The directive was a parent to two other directives, a ngCollageGroup directive (that defined how many elements each group of the grid would consist of) as well as a ngCollageVideo (that took the youtube id of the video and passed it to the ngCollagePlayer to play the video. The result of the collage allows the active video to grow to a moderate size while adjusting the size of its siblings in the same row accordingly.</p>
+                </div>
+                <div class="column is-half">
+                    <img src="/assets/images/asc-collage-opt.gif" alt="Home Video Collage">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="case-study-row">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-half">
+                    <h2>Youtube Switcher</h2>
+                    <p>Some of our client’s treatment pages consisted of multiple videos in which all related to the same topic. Our previous solution for the client in the past was the utilization of a slider to browse through the videos. We wanted to go with something more intuitive and utilize AngularJS’s strengths.</p>
+                    <p>We created a directive in which we called “Youtube Switcher”. What this directive does is provide the general video container of the video that is active. Underneath this player, we have included a container for the related videos using ng-transclude and a sub directive called “youtubeVideo”. This child directive passes the youtube ID to the parent when clicked so that the parent directive can load the video contents of the selected video. The youtubeVideo directive also loads a screenshot of the video from youtube upon load automatically so an image does not need to be provided.</p>
+                </div>
+                <div class="column is-half">
+                    <img src="/assets/images/asc-youtube-switcher-opt.gif" alt="Youtube Switcher">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="case-study-row alt-bg">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-half">
+                    <h2>Doctor Slider</h2>
+                    <p>Our Client wanted to showcase their doctors on the homepage as they felt it would be good to add additional personality to their brand and website. Since each doctor has a bio, a title, his own page, and can have a consultation scheduled, we thought it would be best to utilize a slider for this task.</p>
+                    <p>Using Slick JS, we created a container for each doctor that contained an image of them, some brief information, and a link to their page and a virtual consultation link. We did not want to hide the doctors from being shown upon first look so we included a row of doctor images below. I utilized the Slick JS API to call functions upon the main slider to load the doctor associated with his thumbnail. Along with adding some “active” classes when the doctor was indeed active, we were able to create a complete slider in was also responsive on mobile for visitors to utilize.</p>
+                </div>
+                <div class="column is-half">
+                    <img src="/assets/images/asc-slider-opt.gif" alt="Doctor Slider">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
